@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selina Tung - Personal Brand Package</title>
+    <title>Selina Tung - Personal Brand</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
@@ -106,6 +106,7 @@
             position: relative;
             box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
             animation: float 3s ease-in-out infinite;
+            overflow: visible;
         }
         
         @keyframes float {
@@ -120,24 +121,43 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
-        .dna-helix {
+        .saturn-ring {
             position: absolute;
-            width: 60px;
-            height: 60px;
-            top: 20px;
-            right: 20px;
-            opacity: 0.3;
+            width: 280px;
+            height: 140px;
+            border: 8px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateX(70deg) rotateZ(-15deg);
+            animation: ring-rotate 8s linear infinite;
         }
         
-        .atom-orbit {
+        .saturn-ring::before {
+            content: '';
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            width: 50px;
-            height: 50px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            width: 100%;
+            height: 100%;
+            border: 4px solid rgba(255, 255, 255, 0.2);
             border-radius: 50%;
-            animation: spin 4s linear infinite;
+            top: -4px;
+            left: -4px;
+        }
+        
+        @keyframes ring-rotate {
+            from { transform: translate(-50%, -50%) rotateX(70deg) rotateZ(-15deg); }
+            to { transform: translate(-50%, -50%) rotateX(70deg) rotateZ(345deg); }
+        }
+        
+        .planet-text {
+            position: absolute;
+            bottom: -15px;
+            right: 20px;
+            font-size: 0.7em;
+            color: rgba(255, 255, 255, 0.8);
+            font-style: italic;
+            transform: rotate(15deg);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         
         @keyframes spin {
@@ -222,9 +242,9 @@
         
         <div class="brand-section">
             <h2 class="section-title">Creative Brand Name</h2>
-            <div class="brand-name">Selina Synapse</div>
+            <div class="brand-name">STUNG.jpg</div>
             <p style="text-align: center; color: #7f8c8d; font-size: 1.1em;">
-                "Synapse" represents the connection between creativity and science - where ideas spark and innovation happens.
+                My initials represent my identity (STUNG) and as someone who loves digital art and tech, the .jpeg adds a touch of both.
             </p>
         </div>
         
@@ -234,7 +254,7 @@
                 "Where Curiosity Meets Creativity"
             </div>
             <p style="text-align: center; color: #7f8c8d;">
-                This captures your dual nature - the scientific curiosity that drives discovery and the creative spark that imagines possibilities.
+                I mix my curiosity for the tech and science world with my creative drive from the arts, hopefully creating dozens of cool ideas
             </p>
         </div>
         
@@ -242,26 +262,25 @@
             <h2 class="section-title">Logo Design</h2>
             <div class="logo-container">
                 <div class="logo">
-                    <div class="logo-text">SS</div>
-                    <div class="dna-helix">🧬</div>
-                    <div class="atom-orbit"></div>
+                    <div class="saturn-ring"></div>
+                    <div class="planet-text">stung</div>
                 </div>
             </div>
             <p style="text-align: center; color: #7f8c8d; margin-top: 20px;">
-                The circular design represents wholeness and connection, while the gradient symbolizes the spectrum of possibilities when creativity meets science. The DNA helix and atomic orbit subtly reference your scientific interests.
+                The planetary design brings in my love for astro (as a subsection of physics club) and my signature marks it as mine - just like all my artworks!
             </p>
         </div>
         
         <div class="brand-section">
             <h2 class="section-title">Business Card Design</h2>
             <div class="business-card">
-                <div class="card-name">Selina Synapse</div>
+                <div class="card-name">STUNG.jpg</div>
                 <div class="card-tagline">Where Curiosity Meets Creativity</div>
                 <div class="card-info">
-                    IB Student | Creative Scientist<br>
-                    Ottawa, ON<br>
-                    selina.synapse@email.com<br>
-                    "Innovating through imagination"
+                    IB Student | Creative Scientist:)<br>
+                    Ottawa, ON | CBSS <br>
+                    selina.tung04@email.com<br>
+                    "Innovating through imagination!"
                 </div>
             </div>
         </div>
@@ -269,21 +288,20 @@
         <div class="brand-section">
             <h2 class="section-title">Brand Reflection</h2>
             <div class="reflection">
-                <p>This brand identity celebrates the beautiful intersection of <span class="highlight">creativity and scientific thinking</span> that defines who Selina is as a person and future professional.</p>
+                <p>My brand identity celebrates the beautiful intersection of <span class="highlight">creativity and scientific thinking</span> that hopefully conveys some of my interest and personality - something I hope to bring into the professional world!.</p>
                 
                 <p><strong>Values Represented:</strong></p>
-                <p>The name "Selina Synapse" embodies the core value of <span class="highlight">connection and integration</span>. Just as synapses connect neurons to create thoughts and ideas, this brand represents bridging different worlds - art and science, imagination and logic, creativity and analysis. The slogan "Where Curiosity Meets Creativity" reinforces the value of <span class="highlight">lifelong learning</span> and the belief that the best innovations come from asking "what if?" and "how might we?"</p>
+                <p>The name "STUNG.jpg" embodies the core value of <span class="highlight">creativity and integration to technology</span>. Just like image files can show visual depictions to create thoughts and ideas, this brand represents bridging art and tech, imagination and logic, creativity and analysis. The slogan "Where Curiosity Meets Creativity" reinforces the value of <span class="highlight">lifelong learning</span> and the belief that the best things are made when creative minds give in to their curiosity!</p>
                 
                 <p><strong>Interests and Passions:</strong></p>
-                <p>The scientific elements (DNA helix, atomic orbits) honor the deep love for science, while the creative color gradients, flowing animations, and artistic typography celebrate the creative spirit. This visual language says "I don't choose between science and art - I use both to understand and improve the world."</p>
+                <p>The logo ( a planet) shows my love for astro and physics, while the creative color gradients, flowing animations, and artistic typography celebrate the creative spirit. This visual language says "I don't choose between science and art - I use both to understand and improve the world."</p>
                 
                 <p><strong>Skills and Strengths:</strong></p>
-                <p>The sophisticated design demonstrates <span class="highlight">attention to detail</span> and <span class="highlight">aesthetic sensibility</span>, while the scientific references show <span class="highlight">analytical thinking</span> and <span class="highlight">technical knowledge</span>. The integration of these elements showcases the rare ability to <span class="highlight">synthesize different disciplines</span> - a skill highly valued in today's interconnected world.</p>
+                <p>My design hopefully shows <span class="highlight">attention to detail</span> and <span class="highlight">aesthetic knowledge</span>, while the scientific references (hopefully) show <span class="highlight">analytical thinking</span> and <span class="highlight">technical knowledge</span>. The integration of these elements showcases my abilities and skills to  <span class="highlight">use technology to communucate ideas and thoughts</span> </p>
                 
                 <p><strong>Future Potential:</strong></p>
-                <p>This brand positions Selina as someone who will contribute to fields like <span class="highlight">scientific visualization, biomedical innovation, science communication, or creative technology</span>. It suggests a professional who can make complex ideas accessible, bring creative solutions to scientific challenges, and inspire others to see the beauty in both art and science.</p>
+                <p>I hope that this brand positions me as someone who can contribute to fields like <span class="highlight">scientific visualization, robotics, engineering design, or creative technology</span>. I want to be able to learn and inspire others to see the beauty in both art and science.</p>
                 
-                <p>The overall aesthetic is modern and professional yet approachable, suggesting someone who is <span class="highlight">confident, innovative, and collaborative</span> - exactly the kind of person universities and employers are seeking in our rapidly evolving world.</p>
             </div>
         </div>
     </div>
