@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selina Tung - Personal Brand Package</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .brand-section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .brand-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .brand-name {
+            font-size: 3em;
+            text-align: center;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            margin: 20px 0;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .slogan {
+            font-size: 1.5em;
+            text-align: center;
+            color: #34495e;
+            font-style: italic;
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .logo {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .logo-text {
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .dna-helix {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 20px;
+            right: 20px;
+            opacity: 0.3;
+        }
+        
+        .atom-orbit {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: spin 4s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .business-card {
+            width: 350px;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 25px;
+            color: white;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .business-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: shine 3s ease-in-out infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+            100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        }
+        
+        .card-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .card-tagline {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .card-info {
+            font-size: 0.8em;
+            line-height: 1.4;
+        }
+        
+        .reflection {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: #2c3e50;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Brand Package</h1>
+        
+        <div class="brand-section">
+            <h2 class="section-title">Creative Brand Name</h2>
+            <div class="brand-name">Selina Synapse</div>
+            <p style="text-align: center; color: #7f8c8d; font-size: 1.1em;">
+                "Synapse" represents the connection between creativity and science - where ideas spark and innovation happens.
+            </p>
+        </div>
+        
+        <div class="brand-section">
+            <h2 class="section-title">Brand Slogan</h2>
+            <div class="slogan">
+                "Where Curiosity Meets Creativity"
+            </div>
+            <p style="text-align: center; color: #7f8c8d;">
+                This captures your dual nature - the scientific curiosity that drives discovery and the creative spark that imagines possibilities.
+            </p>
+        </div>
+        
+        <div class="brand-section">
+            <h2 class="section-title">Logo Design</h2>
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-text">SS</div>
+                    <div class="dna-helix">🧬</div>
+                    <div class="atom-orbit"></div>
+                </div>
+            </div>
+            <p style="text-align: center; color: #7f8c8d; margin-top: 20px;">
+                The circular design represents wholeness and connection, while the gradient symbolizes the spectrum of possibilities when creativity meets science. The DNA helix and atomic orbit subtly reference your scientific interests.
+            </p>
+        </div>
+        
+        <div class="brand-section">
+            <h2 class="section-title">Business Card Design</h2>
+            <div class="business-card">
+                <div class="card-name">Selina Synapse</div>
+                <div class="card-tagline">Where Curiosity Meets Creativity</div>
+                <div class="card-info">
+                    IB Student | Creative Scientist<br>
+                    Ottawa, ON<br>
+                    selina.synapse@email.com<br>
+                    "Innovating through imagination"
+                </div>
+            </div>
+        </div>
+        
+        <div class="brand-section">
+            <h2 class="section-title">Brand Reflection</h2>
+            <div class="reflection">
+                <p>This brand identity celebrates the beautiful intersection of <span class="highlight">creativity and scientific thinking</span> that defines who Selina is as a person and future professional.</p>
+                
+                <p><strong>Values Represented:</strong></p>
+                <p>The name "Selina Synapse" embodies the core value of <span class="highlight">connection and integration</span>. Just as synapses connect neurons to create thoughts and ideas, this brand represents bridging different worlds - art and science, imagination and logic, creativity and analysis. The slogan "Where Curiosity Meets Creativity" reinforces the value of <span class="highlight">lifelong learning</span> and the belief that the best innovations come from asking "what if?" and "how might we?"</p>
+                
+                <p><strong>Interests and Passions:</strong></p>
+                <p>The scientific elements (DNA helix, atomic orbits) honor the deep love for science, while the creative color gradients, flowing animations, and artistic typography celebrate the creative spirit. This visual language says "I don't choose between science and art - I use both to understand and improve the world."</p>
+                
+                <p><strong>Skills and Strengths:</strong></p>
+                <p>The sophisticated design demonstrates <span class="highlight">attention to detail</span> and <span class="highlight">aesthetic sensibility</span>, while the scientific references show <span class="highlight">analytical thinking</span> and <span class="highlight">technical knowledge</span>. The integration of these elements showcases the rare ability to <span class="highlight">synthesize different disciplines</span> - a skill highly valued in today's interconnected world.</p>
+                
+                <p><strong>Future Potential:</strong></p>
+                <p>This brand positions Selina as someone who will contribute to fields like <span class="highlight">scientific visualization, biomedical innovation, science communication, or creative technology</span>. It suggests a professional who can make complex ideas accessible, bring creative solutions to scientific challenges, and inspire others to see the beauty in both art and science.</p>
+                
+                <p>The overall aesthetic is modern and professional yet approachable, suggesting someone who is <span class="highlight">confident, innovative, and collaborative</span> - exactly the kind of person universities and employers are seeking in our rapidly evolving world.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
