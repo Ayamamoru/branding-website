@@ -1,2 +1,2 @@
 # branding-website
-uhm a lil website for my careers assignment
+uhm a lil website to try building a brand...
